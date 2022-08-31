@@ -390,3 +390,117 @@ a {
 .social-icon-container ion-icon {
     font-size: 1rem;
 }
+
+.mob-menu {
+    display: none;
+}
+
+@media only screen and (max-width : 500px) {
+    .mob-menu {
+        display: block;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.3rem 5vw;
+    
+    }
+    
+    .logo {
+        height: 1.5rem;
+    }
+    
+    .header__nav {
+        display: none;
+    }
+
+
+
+    #hero {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 0 5vw;
+    
+    }
+    
+    .hero__left img{
+        height: 25rem;
+    }
+    .hero__right {
+        width: 90%;
+    }
+    
+    
+    .name {
+        color: var(--primaryRed);
+        font-size: 1rem;
+        font-weight: 700;
+        
+    }
+    
+    .profession {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: .7rem;
+    }
+    
+    .info {
+        color: #868e96;
+        font-size: .6rem;
+        margin-bottom: 2rem;
+        padding-right: 5rem;
+    }
+    
+
+    #about {
+        height: 80vh;
+        position: relative;
+        padding: 5rem 5vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 1.5fr 1.5fr;
+        gap: 1rem;
+    }
+    
+    .about-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background-color: #181818;
+        z-index: -1;
+    }
+
+
+    #contact {
+        flex-direction: column;
+        margin: 5rem 5vw;
+        background-color: #1e1e1e;
+    }
+    
+    
+    .contact__left-heading {
+        font-size: 2rem;
+        width: 90%;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 2rem;
+    }
+    
+    .contact__left-text {
+        text-align: center;
+        font-size: .6rem;
+        margin-top: .4rem;
+        color: #868e96;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    
+}
